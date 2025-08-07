@@ -70,10 +70,10 @@ const Cart = () => {
 
                       <div className="flex items-center justify-between">
                         <div className="flex items-center space-x-2">
-                          <span className="font-semibold text-lg">${item.price}</span>
+                          <span className="font-semibold text-lg">₹{item.price}</span>
                           {item.originalPrice && (
                             <span className="text-sm text-muted-foreground line-through">
-                              ${item.originalPrice}
+                              ₹{item.originalPrice}
                             </span>
                           )}
                           {item.badge && (
@@ -105,7 +105,7 @@ const Cart = () => {
 
                       <div className="mt-2 text-right">
                         <span className="text-sm text-muted-foreground">
-                          Subtotal: <span className="font-semibold">${(item.price * item.quantity).toFixed(2)}</span>
+                          Subtotal: <span className="font-semibold">₹{(item.price * item.quantity).toFixed(2)}</span>
                         </span>
                       </div>
                     </div>
@@ -122,7 +122,7 @@ const Cart = () => {
                 <div className="space-y-4 mb-6">
                   <div className="flex justify-between">
                     <span>Subtotal ({state.itemCount} items)</span>
-                    <span>${state.total.toFixed(2)}</span>
+                    <span>₹{state.total.toFixed(2)}</span>
                   </div>
                   
                   <div className="flex justify-between">
@@ -132,13 +132,13 @@ const Cart = () => {
                   
                   <div className="flex justify-between">
                     <span>Tax</span>
-                    <span>${(state.total * 0.08).toFixed(2)}</span>
+                    <span>₹{(state.total * 0.08).toFixed(2)}</span>
                   </div>
                   
                   <div className="border-t border-white/10 pt-4">
                     <div className="flex justify-between text-lg font-semibold">
                       <span>Total</span>
-                      <span>${(state.total * 1.08).toFixed(2)}</span>
+                      <span>₹{(state.total * 1.08).toFixed(2)}</span>
                     </div>
                   </div>
                 </div>

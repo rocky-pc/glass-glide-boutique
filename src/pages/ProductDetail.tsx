@@ -162,7 +162,7 @@ const ProductDetail = () => {
               </div>
 
               <div className="flex items-center gap-4 mb-6">
-                <span className="text-3xl font-bold">${product.price}</span>
+                <span className="text-3xl font-bold">₹{product.price}</span>
                 {product.originalPrice && (
                   <span className="text-xl text-muted-foreground line-through">
                     ${product.originalPrice}

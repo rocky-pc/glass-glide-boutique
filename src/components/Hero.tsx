@@ -57,7 +57,7 @@ const Hero = () => {
               </Button>
             </Link>
             
-            <Link to="/about">
+            <Link to="/About">
               <Button 
                 variant="ghost" 
                 size="lg" 
